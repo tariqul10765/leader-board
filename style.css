@@ -2,8 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 /* common styles */
 body{
+    background-color: #E5E5E5;
     margin: 0;
     font-family: 'Poppins', sans-serif;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 870px;
+    background-color: white;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+.section-title{
+    font-size: 24px;
+    color: #562EFF;
+}
+.section-gap{
+    margin-bottom: 25px;
 }
 /* ---------------------
     navigation section
@@ -35,4 +54,28 @@ nav{
     text-decoration: none;
     color: white;
     font-weight: 700;
+}
+
+/* -------------------------------
+    top players and top blogs section 
+----------------------------------*/
+
+/* top players */
+/* .top-players{
+    
+} */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+}
+.player{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.player img{
+    width: 56px;
+    height: 56px;
 }
