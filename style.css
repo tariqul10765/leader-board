@@ -159,3 +159,43 @@ nav{
 .duration p{
     margin: 0;
 }
+
+
+
+
+/*------------------------
+     media query responsive 
+----------------------------*/
+
+/* mobile responsive */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 100%;
+    }
+    nav, .logo, .sections ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    /* .blogs, .courses, hr{
+        display: none;
+    } */
+}
+
+/* tablet responsive */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .container{
+        width: 100%;
+    }
+    nav{
+        padding: 0 20px;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+    }
+}
